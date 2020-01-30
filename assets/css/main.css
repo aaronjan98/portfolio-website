@@ -240,7 +240,7 @@ a {
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+	/* border-bottom: dotted 1px rgba(255, 255, 255, 0.5); */
 	text-decoration: none;
 	color: inherit;
 }
@@ -524,7 +524,7 @@ hr {
 
 .image.main {
 	display: flex;
-	margin: 2.5rem 0;
+	/* margin: 2.5rem 0; */
 	width: 60%;
 }
 
@@ -1487,9 +1487,38 @@ body.is-preload #footer {
 }
 
 #work.active {
-	width: auto;
+	width: 90%;
 }
 
 #work.active img {
 	width: 100%;
+}
+
+#work h2 {
+	text-align: center;
+}
+
+.project {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.projectInfo {
+	width: 40%;
+	padding: 0 2%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.projectInfo .code-buttons {
+	display: flex;
+	margin: 5px;
+	height: 50%;
+	/* justify-content: center; */
+}
+.projectInfo .code-buttons a {
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
 }
