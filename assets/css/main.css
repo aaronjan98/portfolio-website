@@ -1543,7 +1543,7 @@ body.is-preload #footer {
 	}
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1025px) {
 	.project {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
