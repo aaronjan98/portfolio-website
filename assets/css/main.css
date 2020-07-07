@@ -1506,6 +1506,14 @@ body.is-preload #footer {
 .project2 iframe {
 	justify-self: center;
 }
+.image a img {
+	justify-self: center;
+}
+.project3 {
+	display: grid;
+	grid-template-columns: 365px 1fr;
+	grid-template-rows: 1fr;
+}
 
 .projectInfo {
 	padding: 0 2%;
@@ -1531,6 +1539,9 @@ body.is-preload #footer {
 	.project {
 		grid-template-rows: 1fr;
 	}
+	.project3 {
+		grid-template-rows: 1fr;
+	}
 
 	.image.main {
 		grid-row: 1/2;
@@ -1548,6 +1559,25 @@ body.is-preload #footer {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
 	}
+	.project3 {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.project3 .image{
+		display: grid;
+		/* justify-content: center; */
+		/* grid-template-columns: 365px; */
+	}
+	.project3 .image a{
+		display: grid;
+		grid-template-columns: 365px;
+		justify-content: center;
+	}
+	.project .image a img{
+		display: grid;
+		justify-content: center;
+	}
+
 	.image.main {
 		grid-column-start: 1;
 		grid-column-end: 2;
