@@ -179,11 +179,13 @@ html {
 	box-sizing: border-box;
 }
 
+
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+	box-sizing: none;
 }
+
 
 body {
 	background: #1b1f22;
@@ -1310,7 +1312,7 @@ body.is-preload #header .content .inner {
 		height: 3rem;
 		line-height: 3rem;
 		min-width: 0;
-		width: 100%;
+		width: 80%;
 	}
 
 	#header nav.use-middle:after {
@@ -1506,6 +1508,9 @@ body.is-preload #footer {
 .project2 iframe {
 	justify-self: center;
 }
+.project2 video {
+	justify-self: center;
+}
 .image a img {
 	justify-self: center;
 }
@@ -1592,6 +1597,10 @@ body.is-preload #footer {
 	.project2 {
 		grid-template-columns: 1fr;
 	}
+	#work.active {
+		width: 100%;
+	}
+	
 }
 
 .projectInfo .code-buttons {
