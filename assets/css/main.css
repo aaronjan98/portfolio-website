@@ -1598,7 +1598,7 @@ body.is-preload #footer {
 		grid-template-columns: 1fr;
 	}
 	#work.active {
-		width: 100%;
+		width: 90%;
 	}
 	
 }
