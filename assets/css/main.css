@@ -1557,6 +1557,9 @@ body.is-preload #footer {
 	.code-buttons {
 		grid-column: 1/3;
 	}
+	#work.active {
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 1025px) {
@@ -1567,11 +1570,6 @@ body.is-preload #footer {
 	.project3 {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
-	}
-	.project3 .image{
-		display: grid;
-		/* justify-content: center; */
-		/* grid-template-columns: 365px; */
 	}
 	.project3 .image a{
 		display: grid;
@@ -1601,6 +1599,11 @@ body.is-preload #footer {
 		width: 90%;
 	}
 	
+}
+@media screen and (max-width: 480px) {
+	#work.active {
+		width: 100%;
+	}
 }
 
 .projectInfo .code-buttons {
