@@ -1,15 +1,29 @@
+@import "../fonts/lato";
+@import "../fonts/raleway";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  font-family: "Montserrat", sans-serif;
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
-  background: #585c68;
-  font-size: 14px;
-  line-height: 22px;
-  color: #555555;
+    font-family: lato;
+    line-height: 1.5;
+    background: #585c68;
+    color: #555555;
+}
+
+img {
+    max-width: 100%;
+}
+
+.icon {
+    fill: black;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
 }
