@@ -1,5 +1,4 @@
-@import "../fonts/lato";
-@import "../fonts/raleway";
+@import "../../webfontkit/stylesheet.css";
 
 html {
     box-sizing: border-box;
@@ -10,10 +9,18 @@ html {
 }
 
 body {
-    font-family: lato;
-    line-height: 1.5;
+    font-family: 'latomedium';
+    line-height: 2;
     background: #585c68;
     color: #555555;
+}
+
+.body h2 {
+    font-size: 2em;
+    border-bottom: 2px black solid;
+    font-family: 'ralewaysemibold';
+    padding: 5px 0;
+    text-transform: uppercase;
 }
 
 img {
@@ -21,9 +28,92 @@ img {
 }
 
 .icon {
-    fill: black;
+    fill: #555555;
     display: inline-block;
     font-size: inherit;
     height: 1em;
     overflow: visible;
+}
+
+a {
+    color: #323232;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+}
+
+.left-link {
+    padding-right: 10px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 32px;
+    background: white;
+    box-shadow: 5px 10px 30px 15px #6d6c6c;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 24px;
+    margin-bottom: 45px;
+    border: 3px solid lightgray;
+    line-height: 22px;
+}
+
+.name-and-title{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.name-and-title h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.my-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.link-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.right {
+    padding-left: 5em;
+}
+
+.section-content {
+    padding: 10px 0;
 }
