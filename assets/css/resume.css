@@ -59,10 +59,6 @@ a:hover {
     height: 140px;
 }
 
-/* .left-link {
-    padding-right: 10px;
-} */
-
 .container {
 	font-family: "raleways", sans-serif;
     max-width: 960px;
@@ -103,6 +99,20 @@ a:hover {
     flex-direction: column;
     font-weight: 600;
     font-size: 1.5em;
+}
+
+.project-links {
+    display: flex;
+    align-items: flex-end;
+    font-family: "ralewaythin";
+}
+
+.project-link {
+    display: flex;
+}
+
+.project-link:hover {
+    font-weight: 700;
 }
 
 .sub-title {
