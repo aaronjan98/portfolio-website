@@ -528,6 +528,7 @@ hr {
 
 .image.profile {
 	display: flex;
+	justify-content: center;
 	margin: 2.5rem 0;
 	width: 100%;
 }
@@ -537,7 +538,7 @@ hr {
 }
 
 .image.profile img {
-	width: 100%;
+	width: 65%;
 }
 
 @media screen and (max-width: 736px) {
