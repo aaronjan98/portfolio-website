@@ -1658,6 +1658,11 @@ body.is-preload #footer {
 	}
 	
 }
+@media screen and (max-width: 569px) {
+	.project3 {
+		grid-template-rows: none;
+	}
+}
 @media screen and (max-width: 480px) {
 	#work.active {
 		width: 100%;
