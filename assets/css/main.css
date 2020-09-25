@@ -168,16 +168,16 @@ textarea {
 	width: device-width;
 }
 
-@media screen and (max-width: 480px) {
-	html,
-	body {
-		min-width: 320px;
+@media screen and (max-width: 444px) {
+	.project3 .image a {
+		display: grid;
+		grid-template-columns: none;
 	}
 }
 
 html {
 	box-sizing: border-box;
-	min-width: 444px;
+	/* min-width: 444px; */
 }
 
 
@@ -1548,6 +1548,7 @@ body.is-preload #footer {
 
 #work.active img {
 	width: 100%;
+	height: auto;
 }
 
 #work h2 {
@@ -1556,8 +1557,30 @@ body.is-preload #footer {
 
 .project {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+.project .main {
+	display: flex;
+	justify-content: center;
+}
+
+.projectPong {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+.projectPong .main {
+	display: flex;
+	justify-content: center;
+}
+.project .main video {
+	width: 50%;
+	display: flex;
+}
+.projectPong .main video {
+	width: 50vw;
+	display: flex;
 }
 .project2 {
 	display: grid;
@@ -1585,10 +1608,16 @@ body.is-preload #footer {
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+.pongProjectInfo {
+	padding: 0 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 .projectTools {
 	padding: 0 2%;
 	grid-column: 3/4;
-	align-self: center;
 }
 .image.main {
 	grid-column: 1/3;
@@ -1598,10 +1627,19 @@ body.is-preload #footer {
 	grid-column: 3/4;
 } 
 
-@media screen and (max-width: 1370px) {
-	.project {
-		grid-template-rows: 1fr;
+@media screen and (max-width: 1250px) {
+	.projectPong {
+		grid-template-columns: 1fr;
 	}
+	.projectPong .main video {
+		width: 100%;
+	}
+	.projectTools.pong {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 1370px) {
 	.project3 {
 		grid-template-rows: 1fr;
 	}
@@ -1681,9 +1719,9 @@ body.is-preload #footer {
 }
 
 #live-project-button {
-	margin: 10px;
+	margin: 10px 0;
 }
 
 #source-code-button {
-	margin: 10px;
+	margin: 10px 0;
 }
