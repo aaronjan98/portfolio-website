@@ -545,6 +545,7 @@ hr {
 
 .image.profile img {
 	width: 65%;
+    height: intrinsic;
 }
 
 @media screen and (max-width: 736px) {
