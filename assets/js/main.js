@@ -29,6 +29,7 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+            console.log('%cHIRE ME', 'font-size: 40px; font-weight: bold; color: green')
 		});
 
 	// Fix: Flexbox min-height bug on IE.
